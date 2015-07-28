@@ -1,0 +1,305 @@
+* { margin: 0px; padding: 0px; }
+body, html { width: 100%; height: 100%; }
+body {
+	color: #2e2e2e;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(10%,#f1f1f1)) #f1f1f1 repeat-x;
+	text-align: center;
+	-webkit-text-size-adjust: none;
+}
+body, div, span, p {
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+}
+
+.rainbowDash{
+	width: 100%;
+}
+
+.rainbowDash .green,
+.rainbowDash .blue,
+.rainbowDash .red,
+.rainbowDash .orange
+{
+	width: 25%;
+	float: left;
+    height: 100%;
+}
+
+.rainbowDash .green { background-color: #83EDB8; }
+.rainbowDash .blue { background-color: #50BCB6; }
+.rainbowDash .red { background-color: #EE4256; }
+.rainbowDash .orange { background-color: #FCB64B; } 
+
+#container{
+	font-family: Helvetica, sans-serif;
+	color: black;
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+section{
+	box-sizing: border-box;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+section#appData #appIcon, section#appData #appIcon img{
+	width: 48px;
+	height: 48px;
+	float: left;
+}
+
+section#appData #appName, section#oHaiThar #username{
+	font-weight: bold;
+}
+
+section#appData #appDescription{
+	font-style: italic;
+	font-weight: 100;
+	line-height: 1.2em;
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+.device_tablet section#appData #appDescription{
+	font-size: 16px;
+}
+
+section#appData #appName, section#appData #appURL, section#appData #appDescription{
+	margin-left: 60px;
+	color: #555555;
+}
+
+section.permissions .label{
+	font-weight: bold;
+}
+
+section.permissions ul{
+	padding-left: 19px;
+	margin-top: 9px;
+	margin-bottom: 15px;
+}
+
+section#thingsItCanDo .label strong{
+	color: #50bbb6;
+}
+
+section#thingsItCanNotDo{
+	color: #818486;
+}
+
+section#thingsItCanNotDo .label strong{
+	color: #ed4255;
+}
+
+#canHazAuthorization{
+	margin-bottom: 16px;
+	height: 40px;
+}
+
+.device_tablet #canHazAuthorization{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#canHazAuthorization .button, #problem .button{
+	width: 130px;
+	height: 40px;
+	display: inline-block;
+	box-sizing: border-box;
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+	border-radius: 6px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+	text-transform: none;
+}
+
+.allow-a, .allow-m, .allow-d{
+	display: none;
+}
+
+#thingsItCanDo.permission-a .allow-a,
+#thingsItCanDo.permission-m .allow-m,
+#thingsItCanDo.permission-d .allow-d{
+	display: list-item;
+}
+
+#thingsItCanNotDo.permission-a .deny-a,
+#thingsItCanNotDo.permission-m .deny-m,
+#thingsItCanNotDo.permission-d .deny-d{
+	display: none;
+}
+
+.button.left{
+	float: left;
+}
+
+.button.right{
+	float: right;
+}
+
+#problem .button.full{
+	width: 100%;
+	color: black;
+	text-decoration: none;
+}
+
+.button.yellow{
+	background: #fad540; /* Old browsers */
+	background: -moz-linear-gradient(top, #fad540 0%, #fbb64a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fad540), color-stop(100%,#fbb64a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fad540 0%,#fbb64a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fad540 0%,#fbb64a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fad540 0%,#fbb64a 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fad540 0%,#fbb64a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fad540', endColorstr='#fbb64a',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #a4a4a4;
+}
+
+.button.gray{
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top, #eeeeee 0%, #dfdede 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#dfdede)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #eeeeee 0%,#dfdede 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #eeeeee 0%,#dfdede 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #eeeeee 0%,#dfdede 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #eeeeee 0%,#dfdede 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#dfdede',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #bababa;
+}
+
+.button.yellow.selected{
+	background: #fbb64a; /* Old browsers */
+	background: -moz-linear-gradient(top, #fad540 100%, #fbb64a 0%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(100%,#fad540), color-stop(0%,#fbb64a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fad540 100%,#fbb64a 0%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fad540 100%,#fbb64a 0%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fad540 100%,#fbb64a 0%); /* IE10+ */
+	background: linear-gradient(to bottom, #fad540 100%,#fbb64a 0%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbb64a', endColorstr='#fad540',GradientType=0 ); /* IE6-9 */
+}
+
+.button.gray.selected{
+	background: #dfdede; /* Old browsers */
+	background: -moz-linear-gradient(top, #eeeeee 100%, #dfdede 0%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(100%,#eeeeee), color-stop(0%,#dfdede)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #eeeeee 100%,#dfdede 0%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #eeeeee 100%,#dfdede 0%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #eeeeee 100%,#dfdede 0%); /* IE10+ */
+	background: linear-gradient(to bottom, #eeeeee 100%,#dfdede 0%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfdede', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+
+#uhoh{
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+
+
+body.device_tablet{
+	font-size: 20px;
+}
+
+body.device_tablet header{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.rainbowDash{
+	height: 4px;
+	overflow: hidden;
+}
+
+.device_tablet#container .rainbowDash{
+	display: none;
+}
+
+#container{
+	font-family: ProximaNovaLocal, ProximaNova, Helvetica, sans-serif;
+}
+
+header{
+	width: 100%;
+	height: 75px;
+	background: url(wechat-pocket-logo-2x.png) no-repeat center center;
+	background-size: 210px 36px;
+}
+
+body.device_tablet section{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.device_tablet header{
+	background: url(wechat-pocket-logo-tablet-2x.png) no-repeat center center;
+	background-size: 400px 65px;
+}
+
+.device_tablet header .rainbowDash{
+	display: none;
+}
+
+body.device_tablet #canHazAuthorization .button, body.device_tablet #problem .button{
+	width: 210px;
+}
+
+section#appData{
+	background-color: #f9f9f9;
+	border-top:    1px solid #aaaaaa;
+	border-bottom: 1px solid #aaaaaa;
+	margin-top: 14px;
+	margin-bottom: 20px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	box-sizing: border-box;
+	min-height: 86px;
+}
+
+.device_tablet section#appData{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+.wrapper{margin:0 auto;}
+.content{line-height:1.8em;margin-bottom:1.4em;text-align:justify;text-shadow:0 1px 0 #fff;}
+.tips{color:#999;font-size:0.8em;}
+.center{text-align:center;}
+.block {
+	border-bottom: 1px solid #b1b1b1;
+	background: white no-repeat center;
+	-moz-transition: ease-out 0.3s;
+	-moz-transition-property: width, margin;
+	-webkit-transition: ease-out 0.3s;
+	-webkit-transition-property: width, margin;
+	-ms-transition: ease-out 0.3s;
+	-ms-transition-property: width, margin;
+	-o-transition: ease-out 0.3s;
+	-o-transition-property: width, margin;
+	overflow: hidden;
+}
+.block h3{font-weight:bold;color:#39b1aa;text-align:center;padding:15px 18px 0;}
+.block .content{padding:10px 18px;}
+ul.step li{list-style:decimal;margin-left:20px;}
+
+a{color:#39b1aa;}
+footer{text-align:center;padding:20px;text-shadow:0 1px 0 #fff;}
+
+#introduction{font-size:1.1em;width:90%;max-width:330px;}
+#qrimg{border-bottom:1px solid #b1b1b1;}
+
+
+
+
+
